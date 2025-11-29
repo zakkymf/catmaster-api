@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Alice",
+    "lastName": "Smith",
     "isMaster": false,
     "cats": [
       { "id": 1, "name": "Milo", "last": "Smith" },
@@ -11,12 +12,14 @@
   {
     "id": 2,
     "name": "Bob",
+    "lastName": "Johnson",
     "isMaster": true,
     "cats": [{ "id": 3, "name": "Oliver", "last": "Williams" }]
   },
   {
     "id": 3,
     "name": "Charlie",
+    "lastName": "Brown",
     "isMaster": false,
     "cats": [
       { "id": 4, "name": "Simba", "last": "Brown" },
@@ -27,6 +30,7 @@
   {
     "id": 4,
     "name": "Diana",
+    "lastName": "Davis",
     "isMaster": false,
     "cats": [{ "id": 7, "name": "Whiskers", "last": "Wilson" }]
   }
