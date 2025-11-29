@@ -4,14 +4,30 @@
     "name": "Alice",
     "isMaster": false,
     "cats": [
-      { "id": 1, "name": "Milo" },
-      { "id": 2, "name": "Luna" }
+      { "id": 1, "name": "Milo", "last": "Smith" },
+      { "id": 2, "name": "Luna", "last": "Johnson" }
     ]
   },
   {
     "id": 2,
     "name": "Bob",
+    "isMaster": true,
+    "cats": [{ "id": 3, "name": "Oliver", "last": "Williams" }]
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
     "isMaster": false,
-    "cats": [{ "id": 3, "name": "Oliver" }]
+    "cats": [
+      { "id": 4, "name": "Simba", "last": "Brown" },
+      { "id": 5, "name": "Nala", "last": "Davis" },
+      { "id": 6, "name": "Tiger", "last": "Miller" }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Diana",
+    "isMaster": false,
+    "cats": [{ "id": 7, "name": "Whiskers", "last": "Wilson" }]
   }
 ]
