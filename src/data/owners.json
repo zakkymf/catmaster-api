@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "isMaster": false,
+    "cats": [
+      { "id": 1, "name": "Milo" },
+      { "id": 2, "name": "Luna" }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "isMaster": false,
+    "cats": [{ "id": 3, "name": "Oliver" }]
+  }
+]

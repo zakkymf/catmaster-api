@@ -1,0 +1,41 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "CatMaster API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/owners": {
+      "get": {
+        "summary": "Get list of owners",
+        "parameters": [
+          {
+            "name": "sort",
+            "in": "query",
+            "schema": { "type": "string" },
+            "description": "name / cats"
+          }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/owners/{id}": {
+      "get": {
+        "summary": "Get owner detail",
+        "parameters": [
+          { "name": "id", "in": "path", "schema": { "type": "integer" } }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/owners/{id}/master": {
+      "patch": {
+        "summary": "Set owner as master",
+        "parameters": [
+          { "name": "id", "in": "path", "schema": { "type": "integer" } }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
+    }
+  }
+}
