@@ -36,6 +36,15 @@
         ],
         "responses": { "200": { "description": "OK" } }
       }
+    },
+    "/owners/{id}/favorite": {
+      "patch": {
+        "summary": "Set owner as favorite",
+        "parameters": [
+          { "name": "id", "in": "path", "schema": { "type": "integer" } }
+        ],
+        "responses": { "200": { "description": "OK" } }
+      }
     }
   }
 }
