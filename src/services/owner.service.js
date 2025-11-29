@@ -17,3 +17,10 @@ exports.setMaster = (id) => {
   ownerModel.saveOwners(owners);
   return { message: "Master updated" };
 };
+
+exports.setFavorite = (id) => {
+  let owners = ownerModel.getOwners();
+  owners = owners.map((o) => ({ ...o, isFavorite: o.id == id }));
+  ownerModel.saveOwners(owners);
+  return { message: "Favorite updated" };
+};

@@ -16,3 +16,8 @@ exports.setMaster = (req, res) => {
   const result = ownerService.setMaster(req.params.id);
   success(res, result);
 };
+
+exports.setFavorite = (req, res) => {
+  const result = ownerService.setFavorite(req.params.id);
+  success(res, result);
+};
